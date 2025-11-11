@@ -83,7 +83,8 @@ class KurobbsClient:
         role_info = user_game_list.get("defaultRoleList", [])[0]
 
         data = {
-            "gameId": role_info.get("gameId", 2),
+            #"gameId": role_info.get("gameId", 2),
+            "gameId": 2,
             "serverId": role_info.get("serverId", None),
             "roleId": role_info.get("roleId", 0),
             "userId": role_info.get("userId", 0),
