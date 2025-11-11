@@ -83,8 +83,7 @@ class KurobbsClient:
         role_info = user_game_list.get("defaultRoleList", [])[0]
 
         data = {
-            #"gameId": role_info.get("gameId", 2),
-            "gameId": 3,
+            "gameId": role_info.get("gameId", 2),
             "serverId": role_info.get("serverId", None),
             "roleId": role_info.get("roleId", 0),
             "userId": role_info.get("userId", 0),
@@ -94,7 +93,7 @@ class KurobbsClient:
 
     def sign_in(self) -> Response:
         """Perform the sign-in operation."""
-        return self.make_request(self.USER_SIGN_URL,  data)
+        return self.make_request(self.USER_SIGN_URL, {"gameId": 2})
 
     def _process_sign_action(
             self,
