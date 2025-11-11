@@ -94,7 +94,7 @@ class KurobbsClient:
 
     def sign_in(self) -> Response:
         """Perform the sign-in operation."""
-        return self.make_request(self.USER_SIGN_URL, {"gameId"})
+        return self.make_request(self.USER_SIGN_URL,  data)
 
     def _process_sign_action(
             self,
