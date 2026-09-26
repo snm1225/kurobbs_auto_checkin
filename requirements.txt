@@ -2,3 +2,4 @@ pydantic~=2.7.4
 requests~=2.32.3
 loguru~=0.7.3
 serverchan_sdk~=1.0.6
+tzdata
